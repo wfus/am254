@@ -1,0 +1,5 @@
+*.m~
+*.swp
+*.vscode
+*.ipynb_checkpoints
+
