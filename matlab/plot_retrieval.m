@@ -15,7 +15,7 @@ for k=1: length(N)
 end
 
 legend(h,str_N);
-title('Retrieval with signal from Laplacian distribution and \rho=0.5')
+title('Retrieval with signal from Gaussian distribution and \rho=0.5')
 xlabel('\alpha, Undersampling Ratio');
 ylabel('Retrieval Probability');
 axis ([0 1 0 1])

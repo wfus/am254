@@ -11,10 +11,10 @@ function [ succ ] = cs_simulate_l1( N, alpha , rho )
     x_true=zeros(N,1);
     
     % samples from gaussian
-    % x_true(r_perm )=randn(N_nonzero ,1);
+    x_true(r_perm )=randn(N_nonzero ,1);
     
     % samples from laplacian
-    x_true(r_perm ) = laprnd(N_nonzero, 1, 0, 1);
+    % x_true(r_perm ) = laprnd(N_nonzero, 1, 0, 1);
     
     
     A=randn(M,N) * sqrt(1/N);
