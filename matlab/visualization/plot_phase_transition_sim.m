@@ -53,3 +53,4 @@ colorbar;
 title('Basis Pursuit Retrieval Probabilty with Gaussian Signal');
 xlabel('Undersampling rate \alpha = M / N');
 ylabel('Sparsity of original signal \rho');
+
