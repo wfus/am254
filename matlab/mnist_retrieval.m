@@ -38,7 +38,7 @@ sensing_mats = {m.sensematrix4, m.sensematrix8, m.sensematrix9, m.sensematrix10,
                 m.sensematrix23, m.sensematrix24, m.sensematrix25, m.sensematrix26, ...
                 m.sensematrix27};
 images = mnist.testX;
-NUM_TRIALS = 100;
+NUM_TRIALS = 200;
 MNIST_DIM = 784;
 NUM_ALPHAS = int32(length(sensing_mats));
 % Find the undersampling ratios from the size of each sampling matrix
