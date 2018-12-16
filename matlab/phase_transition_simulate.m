@@ -16,7 +16,7 @@ parfor i = 1 : length(RHOS)
         % simulate all of the attempts now for this alpha and rho value
         s = 0;
         for k = 1 : TRIALS_PER_RUN
-            s = s + cs_simulate_l1_laplacian(N, alpha, rho);
+            % s = s + cs_simulate_l1_laplacian(N, alpha, rho);
         end
         fprintf('N=%d, alpha=%f, successes=%d\n', N, alpha, s);
         overall_succ{i}{j} = s;
