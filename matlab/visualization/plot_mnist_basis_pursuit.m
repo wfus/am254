@@ -4,11 +4,20 @@
 % was jointly learned using a convolution neural network.
 %
 
-a = load('../data/mnist_retrieval_random_sensing.mat');
-success = a.succ_random;
-alphas = a.alphas_random;
+a = load('../data/mnist_retrieval_alphas.mat');
+success_random = a.succ_random;
+alphas_random = a.alphas_random;
+success_fixed = a.succ_fixed;
+alphas_fixed = a.alphas_fixed;
 
-plot(alphas, success)
+% Draw the actual plot
+hold on
+plot(alphas_random, success_random)
+plot(alphas_fixed, success_fixed)
+
 title('MNIST Basis Pursuit Retrieval (Random Sensing Matrix)')
 xlabel('Undersampling ratio \alpha = M / N')
 ylabel('Retrieval Success Probability')
+legend('Random Sensing Matrix', 'Learned Sensing Matrix');
+hold off
+
