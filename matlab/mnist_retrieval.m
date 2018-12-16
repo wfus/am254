@@ -13,7 +13,7 @@ mnist.trainY = double(mnist.testX) / 255.0;
 
 images = mnist.testX;
 alphas_random = (10:32) / 50;
-NUM_TRIALS = 12;
+NUM_TRIALS = 100;
 MNIST_DIM = 784;
 
 parfor j = 1 : length(alphas_random)
